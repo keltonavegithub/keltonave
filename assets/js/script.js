@@ -22,10 +22,19 @@
         'interval': 2000
     });
 
+    var sliderparking = new IdealImageSlider.Slider({
+        'selector': '#slider-parking',
+        'effect': 'slide',
+        'transitionDuration': 600,
+        'interval': 2000
+    });
+
+
     var sliders = {
         '612': slider612,
         '614': slider614,
-        '616': slider616
+        '616': slider616,
+        'parking': sliderparking,
     }
 
     // Tab Initialization
@@ -53,5 +62,6 @@
     initPhotoSwipeFromDOM('.gallery-612');
     initPhotoSwipeFromDOM('.gallery-614');
     initPhotoSwipeFromDOM('.gallery-616');
+    initPhotoSwipeFromDOM('.gallery-parking');
     initPhotoSwipeFromDOM('.gallery-property');
 })();

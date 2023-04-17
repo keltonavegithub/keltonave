@@ -295,15 +295,28 @@ header {
             color: #42A23C;
             font-size: 1.5vw;
 
+            &:not(.unavailable) {
+                font-weight: bold;
+                // font-size: 1.6vw;
+            }
+
             &.unavailable {
                 color: #E31212;
             }
 
             @media(min-width:768px){
                 font-size: 9px;
+
+                &:not(.unavailable) {
+                    // font-size: 10px;
+                }
             }
             @media(min-width:992px){
                 font-size: 12px;
+
+                &:not(.unavailable) {
+                    // font-size: 13px;
+                }
             }
         }
 
@@ -313,6 +326,11 @@ header {
             font-family: 'bunt';
             color: #4c4c4c;
             font-size: 3.5vw;
+
+            @media(max-width:768px){
+                font-size: 18px;
+                line-height: 18px;
+            }
 
             @media(min-width:768px){
                 font-size: 18px;
