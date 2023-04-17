@@ -293,7 +293,7 @@ header {
 
         span {
             color: #42A23C;
-            font-size: 1.5vw;
+            font-size: 11px;
 
             &:not(.unavailable) {
                 font-weight: bold;
@@ -305,7 +305,7 @@ header {
             }
 
             @media(min-width:768px){
-                font-size: 9px;
+                font-size: 11px;
 
                 &:not(.unavailable) {
                     // font-size: 10px;
