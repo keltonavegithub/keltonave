@@ -1,8 +1,15 @@
-.garage-pop {
+.second-card .tab .garage-pop {
 	display: inline-block;
+	color: inherit;
+	font: inherit;
+	font-weight: inherit;
 	transform-origin: right center;
-	animation: garage-pop 1.25s cubic-bezier(.2, 1.35, .3, 1) .45s both;
 	will-change: transform, text-shadow;
+}
+
+.garage-pop.is-popping,
+.second-card .tab[data-opt="parking"]:hover .garage-pop {
+	animation: garage-pop 1.25s cubic-bezier(.2, 1.35, .3, 1) both;
 }
 
 @keyframes garage-pop {
@@ -30,7 +37,9 @@
 }
 
 @media (prefers-reduced-motion: reduce) {
-	.garage-pop {
+	.garage-pop,
+	.garage-pop.is-popping,
+	.second-card .tab[data-opt="parking"]:hover .garage-pop {
 		animation: none;
 	}
 }
