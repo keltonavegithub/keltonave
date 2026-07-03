@@ -1,0 +1,36 @@
+.garage-pop {
+	display: inline-block;
+	transform-origin: right center;
+	animation: garage-pop 1.25s cubic-bezier(.2, 1.35, .3, 1) .45s both;
+	will-change: transform, text-shadow;
+}
+
+@keyframes garage-pop {
+	0%, 30% {
+		transform: scale(1);
+		text-shadow: none;
+	}
+	42% {
+		transform: scale(1.32) translateY(-2px);
+		text-shadow: 0 8px 18px rgba(63, 124, 172, .35);
+	}
+	56% {
+		transform: scale(.94);
+	}
+	72% {
+		transform: scale(1.12);
+	}
+	88% {
+		transform: scale(.99);
+	}
+	100% {
+		transform: scale(1);
+		text-shadow: none;
+	}
+}
+
+@media (prefers-reduced-motion: reduce) {
+	.garage-pop {
+		animation: none;
+	}
+}
